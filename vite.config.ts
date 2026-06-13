@@ -9,5 +9,10 @@ import { defineConfig } from "@lovable.dev/vite-tanstack-config";
 export default defineConfig({
   tanstackStart: {
     nitro: false
+  },
+  vite: {
+    build: {
+      manifest: true
+    }
   }
 });
