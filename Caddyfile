@@ -1,5 +1,5 @@
 :{$PORT} {
-    root * /app/dist
+    root * /app/dist/client
     try_files {path} /index.html
     file_server
 }
