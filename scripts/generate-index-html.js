@@ -37,6 +37,9 @@ for (const chunk of Object.values(manifest)) {
   if (Array.isArray(chunk.css)) {
     entryStyles.push(...chunk.css);
   }
+  if (Array.isArray(chunk.assets)) {
+    entryStyles.push(...chunk.assets.filter((f) => f.endsWith(".css")));
+  }
 }
 
 if (entryScripts.length === 0) {
